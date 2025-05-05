@@ -11,8 +11,13 @@ const ContactInfo = () => {
             <Phone className="h-6 w-6 text-primary" />
           </div>
           <h3 className="font-semibold mb-1">Telepon</h3>
-          <p className="text-sm text-muted-foreground mb-3">(021) 123-4567</p>
-          <Button variant="outline" size="sm" className="w-full mt-auto">
+          <p className="text-sm text-muted-foreground mb-3">087777280598</p>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="w-full mt-auto"
+            onClick={() => window.open('https://wa.me/087777280598', '_blank')}
+          >
             <Phone className="mr-2 h-4 w-4" />
             Hubungi Kami
           </Button>
@@ -36,7 +41,12 @@ const ContactInfo = () => {
           </div>
           <h3 className="font-semibold mb-1">Chat</h3>
           <p className="text-sm text-muted-foreground mb-3">Bantuan langsung</p>
-          <Button variant="outline" size="sm" className="w-full mt-auto">
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="w-full mt-auto"
+            onClick={() => window.open('https://wa.me/087777280598', '_blank')}
+          >
             <MessageSquare className="mr-2 h-4 w-4" />
             Mulai Chat
           </Button>
