@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Bed, Bath, SquareFoot, MapPin, Edit } from "lucide-react";
+import { Bed, Bath, Square, MapPin, Edit } from "lucide-react";
 
 interface PropertyProps {
   property: {
@@ -47,7 +47,7 @@ const PropertyCard = ({ property, showEdit = false, onEdit }: PropertyProps) => 
             <span>{property.bathrooms} baths</span>
           </div>
           <div className="flex items-center">
-            <SquareFoot size={18} className="mr-1" />
+            <Square size={18} className="mr-1" />
             <span>{property.area}</span>
           </div>
         </div>
