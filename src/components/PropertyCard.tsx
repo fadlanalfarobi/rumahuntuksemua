@@ -40,11 +40,11 @@ const PropertyCard = ({ property, showEdit = false, onEdit }: PropertyProps) => 
         <div className="flex justify-between items-center mt-4 text-sm">
           <div className="flex items-center">
             <Bed size={18} className="mr-1" />
-            <span>{property.bedrooms} beds</span>
+            <span>{property.bedrooms} kamar</span>
           </div>
           <div className="flex items-center">
             <Bath size={18} className="mr-1" />
-            <span>{property.bathrooms} baths</span>
+            <span>{property.bathrooms} kamar mandi</span>
           </div>
           <div className="flex items-center">
             <Square size={18} className="mr-1" />
@@ -61,7 +61,7 @@ const PropertyCard = ({ property, showEdit = false, onEdit }: PropertyProps) => 
             onClick={() => onEdit && onEdit(property.id)}
           >
             <Edit size={14} className="mr-2" />
-            Edit Property
+            Edit Properti
           </Button>
         </CardFooter>
       )}

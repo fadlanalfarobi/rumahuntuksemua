@@ -12,18 +12,18 @@ const CTASection = () => {
       }}></div>
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Sell Your Home?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Siap Menjual Rumah Anda?</h2>
           <p className="text-lg mb-8">
-            Get a free home valuation and consultation with one of our expert agents.
-            No obligation, just professional advice to help you make the best decision.
+            Dapatkan penilaian rumah dan konsultasi gratis dengan salah satu agen ahli kami.
+            Tanpa kewajiban, hanya saran profesional untuk membantu Anda membuat keputusan terbaik.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Get Your Free Valuation
+              Dapatkan Penilaian Gratis
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Schedule a Consultation
+              Jadwalkan Konsultasi
             </Button>
           </div>
         </div>

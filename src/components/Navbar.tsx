@@ -34,16 +34,16 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Buy</Link>
-            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Sell</Link>
-            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Agents</Link>
-            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Resources</Link>
+            <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Beli</Link>
+            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Jual</Link>
+            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Agen</Link>
+            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Sumber Daya</Link>
             {isLoggedIn ? (
-              <Button onClick={handleAuthAction}>Dashboard</Button>
+              <Button onClick={handleAuthAction}>Dasbor</Button>
             ) : (
               <>
-                <Button variant="outline" onClick={handleAuthAction}>Sign In</Button>
-                <Button onClick={handleAuthAction}>Get Started</Button>
+                <Button variant="outline" onClick={handleAuthAction}>Masuk</Button>
+                <Button onClick={handleAuthAction}>Mulai</Button>
               </>
             )}
           </div>
@@ -60,17 +60,17 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t">
             <div className="flex flex-col space-y-3">
-              <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Buy</Link>
-              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Sell</Link>
-              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Agents</Link>
-              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Resources</Link>
+              <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Beli</Link>
+              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Jual</Link>
+              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Agen</Link>
+              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Sumber Daya</Link>
               <div className="flex flex-col space-y-2 pt-4">
                 {isLoggedIn ? (
-                  <Button className="w-full" onClick={handleAuthAction}>Dashboard</Button>
+                  <Button className="w-full" onClick={handleAuthAction}>Dasbor</Button>
                 ) : (
                   <>
-                    <Button variant="outline" className="w-full" onClick={handleAuthAction}>Sign In</Button>
-                    <Button className="w-full" onClick={handleAuthAction}>Get Started</Button>
+                    <Button variant="outline" className="w-full" onClick={handleAuthAction}>Masuk</Button>
+                    <Button className="w-full" onClick={handleAuthAction}>Mulai</Button>
                   </>
                 )}
               </div>

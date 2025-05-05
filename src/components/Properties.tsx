@@ -7,35 +7,35 @@ const Properties = () => {
   const properties = [
     {
       id: 1,
-      title: "Modern Waterfront Villa",
-      price: "$1,250,000",
+      title: "Villa Modern Tepi Pantai",
+      price: "Rp18.750.000.000",
       image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      address: "1234 Lakeside Dr, Miami, FL",
+      address: "1234 Jalan Pantai, Jakarta",
       beds: 4,
       baths: 3.5,
-      sqft: 3200,
+      sqft: "297 m²",
       tag: "Premium"
     },
     {
       id: 2,
-      title: "Cozy Downtown Loft",
-      price: "$685,000",
+      title: "Loft Nyaman di Pusat Kota",
+      price: "Rp10.275.000.000",
       image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=80",
-      address: "789 Urban Ave, Portland, OR",
+      address: "789 Jalan Urban, Jakarta",
       beds: 2,
       baths: 2,
-      sqft: 1250,
-      tag: "Just Listed"
+      sqft: "116 m²",
+      tag: "Baru Terdaftar"
     },
     {
       id: 3,
-      title: "Suburban Family Home",
-      price: "$925,000",
+      title: "Rumah Keluarga Pinggiran Kota",
+      price: "Rp13.875.000.000",
       image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=80",
-      address: "456 Maple St, Austin, TX",
+      address: "456 Jalan Maple, Bandung",
       beds: 5,
       baths: 4,
-      sqft: 2800,
+      sqft: "260 m²",
       tag: "Open House"
     }
   ];
@@ -45,11 +45,11 @@ const Properties = () => {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">Featured Listings</h2>
-            <p className="text-lg text-muted-foreground">Discover our exclusive selection of premium properties</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">Properti Unggulan</h2>
+            <p className="text-lg text-muted-foreground">Temukan pilihan eksklusif kami dari properti premium</p>
           </div>
           <a href="#" className="text-primary font-medium mt-4 md:mt-0 hover:text-primary/80 transition-colors">
-            View All Properties →
+            Lihat Semua Properti →
           </a>
         </div>
         
@@ -79,15 +79,15 @@ const Properties = () => {
                 <div className="grid grid-cols-3 gap-4 mt-6 py-4 border-t">
                   <div className="flex items-center">
                     <Bed className="w-4 h-4 mr-2 text-muted-foreground" />
-                    <span>{property.beds} Beds</span>
+                    <span>{property.beds} Kamar</span>
                   </div>
                   <div className="flex items-center">
                     <Bath className="w-4 h-4 mr-2 text-muted-foreground" />
-                    <span>{property.baths} Baths</span>
+                    <span>{property.baths} K.Mandi</span>
                   </div>
                   <div className="flex items-center">
                     <Square className="w-4 h-4 mr-2 text-muted-foreground" />
-                    <span>{property.sqft} ft²</span>
+                    <span>{property.sqft}</span>
                   </div>
                 </div>
               </CardContent>

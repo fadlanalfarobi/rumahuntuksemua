@@ -5,33 +5,33 @@ const Features = () => {
   const features = [
     {
       icon: <Building className="w-6 h-6 text-primary" />,
-      title: "Expert Market Analysis",
-      description: "Get a competitive price analysis based on comparable homes in your area"
+      title: "Analisis Pasar Ahli",
+      description: "Dapatkan analisis harga kompetitif berdasarkan rumah yang sebanding di area Anda"
     },
     {
       icon: <Heart className="w-6 h-6 text-primary" />,
-      title: "Professional Photography",
-      description: "Showcase your home with high-quality photos that attract serious buyers"
+      title: "Fotografi Profesional",
+      description: "Tampilkan rumah Anda dengan foto berkualitas tinggi yang menarik pembeli serius"
     },
     {
       icon: <Home className="w-6 h-6 text-primary" />,
-      title: "Virtual Staging",
-      description: "Modern virtual staging to help buyers visualize your property's potential"
+      title: "Penataan Virtual",
+      description: "Penataan virtual modern untuk membantu pembeli memvisualisasikan potensi properti Anda"
     },
     {
       icon: <MapPin className="w-6 h-6 text-primary" />,
-      title: "Maximum Exposure",
-      description: "Your listing is promoted across all major real estate platforms"
+      title: "Eksposur Maksimal",
+      description: "Daftar properti Anda dipromosikan di semua platform real estate utama"
     },
     {
       icon: <Award className="w-6 h-6 text-primary" />,
-      title: "Experienced Agents",
-      description: "Work with top-rated agents with deep local market knowledge"
+      title: "Agen Berpengalaman",
+      description: "Bekerja dengan agen berperingkat teratas dengan pengetahuan pasar lokal yang mendalam"
     },
     {
       icon: <Banknote className="w-6 h-6 text-primary" />,
-      title: "Smart Pricing",
-      description: "Data-driven pricing strategies to maximize your profit"
+      title: "Harga Cerdas",
+      description: "Strategi penetapan harga berbasis data untuk memaksimalkan keuntungan Anda"
     }
   ];
 
@@ -39,9 +39,9 @@ const Features = () => {
     <div className="py-16 bg-muted">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Sell With Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Mengapa Menjual Bersama Kami</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From listing to closing, we handle every aspect of selling your home with care and expertise
+            Dari pendaftaran hingga penutupan, kami menangani setiap aspek penjualan rumah Anda dengan hati-hati dan keahlian
           </p>
         </div>
         

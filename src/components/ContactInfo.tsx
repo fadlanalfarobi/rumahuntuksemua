@@ -10,11 +10,11 @@ const ContactInfo = () => {
           <div className="h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center mb-3">
             <Phone className="h-6 w-6 text-primary" />
           </div>
-          <h3 className="font-semibold mb-1">Phone</h3>
-          <p className="text-sm text-muted-foreground mb-3">(555) 123-4567</p>
+          <h3 className="font-semibold mb-1">Telepon</h3>
+          <p className="text-sm text-muted-foreground mb-3">(021) 123-4567</p>
           <Button variant="outline" size="sm" className="w-full mt-auto">
             <Phone className="mr-2 h-4 w-4" />
-            Call Us
+            Hubungi Kami
           </Button>
         </div>
         
@@ -26,7 +26,7 @@ const ContactInfo = () => {
           <p className="text-sm text-muted-foreground mb-3">info@homefind.com</p>
           <Button variant="outline" size="sm" className="w-full mt-auto">
             <Mail className="mr-2 h-4 w-4" />
-            Email Us
+            Email Kami
           </Button>
         </div>
         
@@ -35,33 +35,33 @@ const ContactInfo = () => {
             <MessageSquare className="h-6 w-6 text-primary" />
           </div>
           <h3 className="font-semibold mb-1">Chat</h3>
-          <p className="text-sm text-muted-foreground mb-3">Live support</p>
+          <p className="text-sm text-muted-foreground mb-3">Bantuan langsung</p>
           <Button variant="outline" size="sm" className="w-full mt-auto">
             <MessageSquare className="mr-2 h-4 w-4" />
-            Start Chat
+            Mulai Chat
           </Button>
         </div>
       </div>
       
       <div className="pt-6 border-t">
-        <h3 className="font-semibold mb-3">Office Hours</h3>
+        <h3 className="font-semibold mb-3">Jam Operasional</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Monday - Friday:</span>
-            <span>9:00 AM - 6:00 PM</span>
+            <span className="text-muted-foreground">Senin - Jumat:</span>
+            <span>9:00 - 18:00</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Saturday:</span>
-            <span>10:00 AM - 4:00 PM</span>
+            <span className="text-muted-foreground">Sabtu:</span>
+            <span>10:00 - 16:00</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Sunday:</span>
-            <span>Closed</span>
+            <span className="text-muted-foreground">Minggu:</span>
+            <span>Tutup</span>
           </div>
         </div>
       </div>
       
-      <Button className="w-full">Schedule a Consultation</Button>
+      <Button className="w-full">Jadwalkan Konsultasi</Button>
     </div>
   );
 };

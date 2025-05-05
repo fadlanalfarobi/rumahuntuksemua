@@ -7,26 +7,26 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Robert & Maria Thompson",
-      quote: "We sold our home in just 9 days and got $30k over asking! The professional photography and virtual staging made our home stand out from the competition.",
+      quote: "Kami menjual rumah kami hanya dalam 9 hari dan mendapatkan Rp450 juta di atas harga penawaran! Fotografi profesional dan penataan virtual membuat rumah kami menonjol dari pesaingnya.",
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=80",
       rating: 5,
-      location: "Portland, OR"
+      location: "Jakarta Selatan"
     },
     {
       id: 2,
       name: "Jennifer Wilson",
-      quote: "As a first-time seller, I was nervous about the process. HomeFind made everything simple with clear guidance every step of the way. I couldn't be happier with the results!",
+      quote: "Sebagai penjual pertama kali, saya gugup tentang prosesnya. HomeFind membuat semuanya sederhana dengan panduan yang jelas di setiap langkah. Saya tidak bisa lebih bahagia dengan hasilnya!",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=80",
       rating: 5,
-      location: "Seattle, WA"
+      location: "Bandung"
     },
     {
       id: 3,
       name: "James & David Rodriguez",
-      quote: "After our home sat on the market for months with another agency, HomeFind sold it in under 3 weeks. Their marketing strategy and negotiation skills are unmatched.",
+      quote: "Setelah rumah kami berada di pasar selama berbulan-bulan dengan agen lain, HomeFind menjualnya dalam waktu kurang dari 3 minggu. Strategi pemasaran dan keterampilan negosiasi mereka tidak tertandingi.",
       image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=80",
       rating: 5,
-      location: "Austin, TX"
+      location: "Surabaya"
     }
   ];
 
@@ -34,9 +34,9 @@ const Testimonials = () => {
     <div className="py-16">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Apa Kata Klien Kami</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from homeowners who successfully sold their properties with us
+            Dengarkan dari pemilik rumah yang berhasil menjual properti mereka bersama kami
           </p>
         </div>
         
