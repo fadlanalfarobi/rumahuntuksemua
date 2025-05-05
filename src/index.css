@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,24 +6,52 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
-    --radius: 1.2rem;
+    --foreground: 215 25% 27%;
+    --radius: 0.8rem;
   }
-}
-
-@layer base {
+  
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
   }
 }
 
-.glass-effect {
-  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+@layer utilities {
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .shadow-custom {
+    @apply shadow-lg shadow-gray-200/50;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
 }
 
-.hover-lift {
-  @apply transition-transform duration-300 hover:-translate-y-1;
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all;
+  }
+  
+  .btn-accent {
+    @apply bg-accent hover:bg-accent/90 text-white font-medium py-3 px-6 rounded-lg shadow-md transition-all;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary hover:bg-primary/10 text-primary font-medium py-3 px-6 rounded-lg transition-all;
+  }
 }

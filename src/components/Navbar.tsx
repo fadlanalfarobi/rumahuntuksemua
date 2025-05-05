@@ -1,24 +1,54 @@
+
 import { Button } from "@/components/ui/button";
-import { LogIn } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-background/80 backdrop-blur-lg">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-2xl font-bold text-white">Cardo</div>
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Deposit</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Dashboard</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Company</a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors">Pricing</a>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
-            Open your account
-          </Button>
-          <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
-            Sign in
-            <LogIn className="w-4 h-4 ml-2" />
-          </Button>
+    <nav className="py-4 bg-white sticky top-0 z-50 shadow-sm">
+      <div className="container-custom">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <a href="/" className="flex items-center">
+              <span className="text-2xl font-bold text-primary">Home<span className="text-secondary">Find</span></span>
+            </a>
+          </div>
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Buy</a>
+            <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Sell</a>
+            <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Agents</a>
+            <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Resources</a>
+            <Button variant="outline" className="ml-4">Sign In</Button>
+            <Button>Get Started</Button>
+          </div>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
         </div>
+        
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden mt-4 py-4 border-t">
+            <div className="flex flex-col space-y-3">
+              <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Buy</a>
+              <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Sell</a>
+              <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Agents</a>
+              <a href="#" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Resources</a>
+              <div className="flex flex-col space-y-2 pt-4">
+                <Button variant="outline" className="w-full">Sign In</Button>
+                <Button className="w-full">Get Started</Button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
