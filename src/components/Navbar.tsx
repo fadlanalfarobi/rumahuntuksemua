@@ -34,7 +34,7 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Buy</Link>
+            <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Buy</Link>
             <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Sell</Link>
             <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Agents</Link>
             <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors">Resources</Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t">
             <div className="flex flex-col space-y-3">
-              <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Buy</Link>
+              <Link to="/buy" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Buy</Link>
               <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Sell</Link>
               <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Agents</Link>
               <Link to="/" className="text-secondary/80 hover:text-secondary font-medium transition-colors py-2">Resources</Link>
